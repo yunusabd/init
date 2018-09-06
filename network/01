@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: yabdulha <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/09/06 09:59:41 by yabdulha          #+#    #+#              #
+#    Updated: 2018/09/06 09:59:47 by yabdulha         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+ifconfig -l
+# The -l flag may be used to list all available interfaces on the system,
+# with no other additional information.
