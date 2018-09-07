@@ -1,22 +1,15 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    04                                                 :+:      :+:    :+:    #
+#    05                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: yabdulha <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/09/06 16:11:29 by yabdulha          #+#    #+#              #
-#    Updated: 2018/09/07 16:08:18 by yabdulha         ###   ########.fr        #
+#    Created: 2018/09/07 16:08:51 by yabdulha          #+#    #+#              #
+#    Updated: 2018/09/07 16:09:28 by yabdulha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 #!/bin/bash
 
-if ! [ -f /var/log/md5.hash ]; then
-	`md5sum /etc/crontab > /var/log/md5.hash`
-fi
-md5f1=$(md5sum /etc/crontab | cut -d' ' -f1)
-md5f2=$(cat /var/log/md5.hash | cut -d' ' -f1)
-if ! [ "$md5f1" == "$md5f2" ]; then
-	echo "Crontab file has been changed" | mail -s "Crontab file has been changed" root
-	`md5sum /etc/crontab > /var/log/md5.hash`
-fi
+echo '42'
